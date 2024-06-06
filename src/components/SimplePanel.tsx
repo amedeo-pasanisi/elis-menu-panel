@@ -8,7 +8,7 @@ import './menuPanelStyle.css'
 interface MenuPanelProps extends PanelProps<MenuPanelOptions> {}
 
 export const MenuPanel: React.FC<MenuPanelProps> = ({ options, data, width, height, fieldConfig, id }) => {
-  const [dashboards, setDashboards] = useState<Array<MenuPanelDashboard>>([])
+  const [dashboards, setDashboards] = useState<MenuPanelDashboard[]>([])
 
   useEffect(() => {
     if (options.fetchUrl) {
@@ -51,6 +51,7 @@ export const MenuPanel: React.FC<MenuPanelProps> = ({ options, data, width, heig
         return <button
           className='menuButton'
           onClick={() => handleButtonClick(dashboard)}
+          key={dashboard.id}
         >
           {dashboard.title}
         </button>
