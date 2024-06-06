@@ -1,7 +1,21 @@
-type SeriesSize = 'sm' | 'md' | 'lg';
+export interface MenuPanelOptions {
+  fetchUrl: string;
+  tags: string
+}
 
-export interface SimpleOptions {
-  text: string;
-  showSeriesCount: boolean;
-  seriesCountSize: SeriesSize;
+export interface MenuPanelDashboard { 
+  id: number;
+  uid: string;
+  title: string;
+  uri: string;
+  url: string;
+  slug: string;
+  type: string;
+  tags?: any[] | null;
+  isStarred: boolean;
+  folderId: number;
+  folderUid: string;
+  folderTitle: string;
+  folderUrl: string;
+  sortMeta: number;
 }

@@ -1,0 +1,32 @@
+.menuButton {
+  box-sizing: border-box;
+  width: 200px;
+  height: fit-content;
+  min-height: 100px;
+  margin: 20px 10px;
+  padding: 15px;
+  font-family: Roboto;
+  font-size: 22px;
+  background-color: #0C419A;
+  color: white;
+  border: none;
+  border-radius: 15px;
+  box-shadow: rgba(0, 0, 0, 0.02) 0 1px 3px 0;
+  transition: all 150ms;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: baseline;
+}
+
+.menuButton:hover {
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 10px;
+  transform: translateY(-2px);
+}
+
+.menuButton:active {
+  background-color: #3366c0;
+  border-color: rgba(0, 0, 0, 0.15);
+  box-shadow: rgba(0, 0, 0, 0.06) 0 2px 4px;
+  transform: translateY(0);
+}
